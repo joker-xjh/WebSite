@@ -21,6 +21,7 @@ public interface BaseDao<T>{
 	List<T> find(String hql, Integer page, int rows);
 	List<T> find(String hql, Map<String, Object> params, Integer page, int rows);
 	
+	Integer count(String hql);
 	Integer count(String hql, Integer id);
 
 	Integer count(String hql, Map<String, Object> params);

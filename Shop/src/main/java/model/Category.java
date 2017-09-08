@@ -59,7 +59,7 @@ public class Category {
 		this.privilegeTime = privilegeTime;
 	}
 
-	@OneToMany(mappedBy="category",fetch = FetchType.LAZY)
+	@OneToMany(mappedBy="category",fetch = FetchType.EAGER)
 	@OrderBy("csid")
 	public Set<CategorySecond> getCategorySeconds() {
 		return categorySeconds;

@@ -16,7 +16,7 @@ public class TicketDaoImpl extends BaseDaoImpl<Ticket> implements TicketDao{
 		query.setParameter(0, categoryID);
 		return (Ticket) query.uniqueResult();
 	}
-	
+
 	
 
 }

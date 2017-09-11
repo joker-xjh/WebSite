@@ -2,8 +2,7 @@ package service;
 
 import java.util.List;
 
-import javax.persistence.criteria.Order;
-
+import model.Order;
 import model.OrderItem;
 
 public interface OrderService {

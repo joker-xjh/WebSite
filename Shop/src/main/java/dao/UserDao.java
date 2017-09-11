@@ -4,7 +4,7 @@ import java.util.List;
 
 import model.User;
 
-public interface UserDao {
+public interface UserDao extends BaseDao<User>{
 	
 	User findByUsername(String username);
 	User findByUsernameAndPassword(String username, String password);

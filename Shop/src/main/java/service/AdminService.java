@@ -13,6 +13,6 @@ public interface AdminService {
 	List<User> findAll(Integer page);
 	Integer countUser();
 	User findUserByID(Integer userID);
-	Admin findAdminByID();
+	Admin findAdminByID(Integer adminID);
 
 }

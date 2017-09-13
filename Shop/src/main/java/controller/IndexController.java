@@ -24,7 +24,7 @@ public class IndexController {
 	
 	@RequestMapping(value = {"/index","/"})
 	public String showIndex(Map<String, Object> data, HttpSession session) {
-		session.setAttribute("category", categoryService.getCategory());
+		session.setAttribute("categoryList", categoryService.getCategory());
 		data.put("newList", productService.findNew());
 		data.put("hotList", productService.findHot());
 		return INDEX;

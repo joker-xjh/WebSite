@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Date;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.OrderBy;
 import javax.persistence.Table;
 
@@ -69,6 +71,7 @@ public class Category {
 		this.categorySeconds = categorySeconds;
 	}
 
+	@OneToOne(mappedBy = "category")
 	public Ticket getTicket() {
 		return ticket;
 	}

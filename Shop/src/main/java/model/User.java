@@ -1,13 +1,13 @@
 package model;
 
 import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.hibernate.validator.constraints.Email;
 
 @Entity
 @Table(name = "user")
@@ -67,7 +67,7 @@ public class User {
 		this.name = name;
 	}
 
-	@Email(message = "ÓÊÏä¸ñÊ½´íÎó")
+	
 	public String getEmail() {
 		return email;
 	}

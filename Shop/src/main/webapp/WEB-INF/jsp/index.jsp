@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -9,11 +9,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>网上商城</title>
 
-<link href="${pageContext.request.contextPath}/css/slider.css"
+<link href="/css/slider.css"
 	rel="stylesheet" type="text/css" />
-<link href="${pageContext.request.contextPath}/css/common.css"
+<link href="/css/common.css"
 	rel="stylesheet" type="text/css" />
-<link href="${pageContext.request.contextPath}/css/index.css"
+<link href="/css/index.css"
 	rel="stylesheet" type="text/css" />
 </head>
 <body>

@@ -27,6 +27,7 @@ public class IndexController {
 		session.setAttribute("categoryList", categoryService.getCategory());
 		data.put("newList", productService.findNew());
 		data.put("hotList", productService.findHot());
+		System.out.println("1111111111111111111");
 		return INDEX;
 	}
 
